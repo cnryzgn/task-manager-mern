@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); /* Header */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+.task-categories-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.task-categories-container > .task-container {
+    border: 1px solid tomato;
+    box-shadow: 2px 2px 1px tomato;
+    margin: 50px 20px;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.task-container > h1 {
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid tomato;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+/* Scrolls */
+
+.task-list {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.task-list::-webkit-scrollbar {
+    width: 10px; 
+    height: fit-content;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background-color: tomato;
+}
+
+/* End Scrolls */
+
+
+.task-categories-container .item {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 1px solid tomato;
+    display: flex;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Display Task */
+.task-categories-container .item span { padding-left: 11px; display: block; word-break: break-all; transform: .5s; }
+
+/* Open Edit Task Input */
+.item #edit-input { 
+    display: none;
+    outline: none;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    display: flex;
+    margin-right: 7px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.item:hover {
+    box-shadow: 0 0 3px tomato;
+}
+
+.task-categories-container .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-categories-container .buttons > button {
+    width: 75px;
+    height: 38px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#delete-btn {
+    background-color: crimson;
+    color: #fff;
+}
+
+#update-btn {
+    background-color: yellow;
+}
+
+
+@media (max-width: 1080px) {
+    .task-categories-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .task-list span {
+        padding: 11px;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item .buttons {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .item .buttons > button {
+        height: 50px;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #edit-input {
+        text-align: center;
+    }
+
+    #select > option { width: 100%; }
+}

@@ -2,9 +2,9 @@
 <br>
 
 ## Links
-(Screenshots)[https://github.com/cnryzgn/task-manager-mern#Screenshots]<br>
-(Technologies)[https://github.com/cnryzgn/task-manager-mern#Technologies]<br>
-(Setup)[https://github.com/cnryzgn/task-manager-mern#Setup]<br>
+* [Screenshots](https://github.com/cnryzgn/task-manager-mern#Screenshots)<br>
+* [Technologies](https://github.com/cnryzgn/task-manager-mern#Technologies)<br>
+* [Setup](https://github.com/cnryzgn/task-manager-mern#Setup)<br>
 
 ## Screenshots
 ![](https://github.com/cnryzgn/task-manager-mern/blob/main/screenshots/mern-task-list-1.png)
